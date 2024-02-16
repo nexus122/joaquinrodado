@@ -7,23 +7,18 @@ export async function getPage({ params }) {
     return { title };
 }
 
-export async function getPaths() {
-    console.log(json);
+export async function getPaths() {    
     const titles = json.map((project) => project.title);
-
-    // Crea un array de objetos con los parámetros necesarios para cada ruta
     const paths = titles.map((title) => ({
         params: {
             title,
         },
-    }));
-
-    // Devuelve el array de rutas
+    }));    
     return paths;
 }
 ---
 
-<Layout title={Astro.params.title} description="Proyectos personales">
+<Layout title={Astro.params.title ?? ""} />
     {
         json.map((project) => {
             if (project.title === Astro.params.title) {
