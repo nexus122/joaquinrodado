@@ -12,10 +12,9 @@ const { title, background, colSpan, rowSpan, description } = Astro.props;
 <a
 	href={`/CardDetail/${title}`}
 	class:list={[
-		"card",
-		{ [`row-span-${rowSpan}`]: rowSpan },
-		{ [`col-span-${colSpan}`]: colSpan },
+		"card"
 	]}
+	style={{ "grid-row": `span ${rowSpan}`, "grid-column": `span ${colSpan}`}}
 >
 
 		<div class="overlay">
@@ -28,7 +27,7 @@ const { title, background, colSpan, rowSpan, description } = Astro.props;
 <style>
 	.card {
 		position: relative;
-		width: 100%;
+		min-width: 100%;
 		min-height: 400px;
 		background-size: cover;
 		background-repeat: no-repeat;
