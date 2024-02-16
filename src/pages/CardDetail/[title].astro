@@ -1,0 +1,144 @@
+---
+import json from "../../../public/portfolio.json";
+import Layout from "../../layouts/Layout.astro";
+export async function getPage({ params }) {
+    const title = params.title;
+
+    return { title };
+}
+
+export async function getPaths() {
+    console.log(json);
+    const titles = json.map((project) => project.title);
+
+    // Crea un array de objetos con los parámetros necesarios para cada ruta
+    const paths = titles.map((title) => ({
+        params: {
+            title,
+        },
+    }));
+
+    // Devuelve el array de rutas
+    return paths;
+}
+---
+
+<Layout title={Astro.params.title} description="Proyectos personales">
+    {
+        json.map((project) => {
+            if (project.title === Astro.params.title) {
+                return (
+                    <div class="general">
+                        <div
+                            class="header parallax flex flex-col"
+                            style={`background-image: url(${project.background})`}
+                        >
+                            <h1>
+                                <a href="/" class="arrow">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 448 512"
+                                    >
+                                        <path
+                                            fill="#ffffff"
+                                            d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+                                        />
+                                    </svg>
+                                </a>
+                                {project.title}
+                            </h1>
+                        </div>
+                        <div class="content">
+                            <div class="flex flex-row justify-center gap-5">
+                                <iframe
+                                    src={`${project.video}`}
+                                    allowfullscreen
+                                />
+                                <span class="flex flex-col gap-4">
+                                    <h2 class="text-5xl">{project.title}</h2>
+                                    <span>
+                                        {                                            
+                                            project.tags.map((tag) => {
+                                                if(tag){
+                                                    return (
+                                                        <span class="bg-gray-200 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2">
+                                                            {tag}
+                                                        </span>
+                                                    );
+                                                }else{
+                                                    return null;
+                                                }
+                                            })
+                                        }
+                                    </span>
+                                    <p>{project.description}</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                );
+            }
+        })
+    }
+</Layout>
+<script>
+    setTimeout(() => {
+        scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth",
+        });
+    }, 100);
+</script>
+
+<style scoped>
+    iframe{
+        min-width: 50%;
+        min-height: 400px;
+    }
+    .header {
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .general {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 1em;
+    }
+    .header h1 {
+        font-size: 5rem;
+        position: sticky;
+        top: 20%;
+    }
+    p {
+        color: white;
+    }
+    .parallax {
+        /* Crea el efecto parallax */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .content {
+        padding-top: 2rem;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 1em;
+        box-sizing: border-box;
+    }
+    .arrow {
+        height: 1em;
+        width: 1em;
+        display: inline-block;
+        vertical-align: middle;
+    }
+</style>

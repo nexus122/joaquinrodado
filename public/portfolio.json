@@ -1,107 +1,171 @@
 [
-    {
+    {      
       "title": "Mantis",
       "background": "https://joaquinrodado.com/wp-content/uploads/2022/06/MANTIS-3-min.png",
+      "tags": ["Diseño de sonido", "mezcla", "master"],
+      "description": "MENCIÓN: TOP 10 en la categoría de diseño sonoro del festival Berlin Commercial Director: Albert Grabuleda Jugando con los estereotipos, Mantis se cuestiona si la identidad es algo que se nos impone o algo por descubrir. El cortometraje sigue a una joven de ascendencia asiática que cumple con las expectativas de la sociedad occidental. Lentamente, comienza a preguntarse si sus acciones son simplemente el resultado de cómo ha sido condicionada para pensar y si, en última instancia, después de tantos años, esto se ha convertido efectivamente en su identidad. Cuestionando cuán verdaderamente cómodos nos sentimos en nuestra piel, Mantis plantea inteligentemente la cuestión de quién está a cargo de (de)construir nuestra identidad.",
+      "video": "https://www.youtube.com/embed/qCseXTkkbQ0?si=ESRBznzGUQbokMns",
       "colSpan": "2"
     },
     {
       "title": "Indomita",
       "background": "https://joaquinrodado.com/wp-content/uploads/2022/06/INDOMITA-min.png",
+      "tags": ["Diseño de sonido", "mezcla", "master"],
+      "description": "Fashion film escrito y dirigido por La Sister, también producido por Aina Salarich y Nico García",
+      "video": "https://www.youtube.com/embed/HzjpvkbFe78?si=i-lSX4sIZq2_wFbU",
       "rowSpan": "2",
       "colSpan": "2"
     },
     {
       "title": "Wilson",
+      "tags": ["Diseño de sonido", "mezcla", "master"],
+      "description": "Spot dirigido por Albert Grabuleda",
       "background": "https://joaquinrodado.com/wp-content/uploads/2022/09/wilson1-scaled.jpg",
       "colSpan": "2"
     },
     {
       "title": "Agua",
+      "tags": ["Diseño de sonido", "mezcla", "master"],
+      "video": "https://www.youtube.com/embed/Db4yzLHA1W4?si=FK1hfcJ0br0_lUR4",
       "background": "https://joaquinrodado.com/wp-content/uploads/2022/06/AGUA-min.png",
       "colSpan": "2"
     },
     {
-      "title": "Jeddah",
+      "title": "Jeddah",      
+      "video": "https://www.youtube.com/embed/oPaVL13mUQA?si=bagdpBNQKRNirzVZ",
+      "tags": ["Musica","Diseño de sonido", "mezcla", "master"],
+      "description":"Spot dirigido por Elena Garcia.",
       "background": "https://joaquinrodado.com/wp-content/uploads/Captura-de-pantalla-2023-08-30-a-las-18.08.34.png",
       "colSpan": "2"
     },
     {
-      "title": "Invictor Soldado",
+      "title": "Invictor Soldado",      
+      "video":"https://www.youtube.com/embed/aB_pabAx-LU?si=Wfeql_B7g62Vr3nr",
+      "tags": ["Diseño Sonoro"],
+      "description": "Creación del Diseño Sonoro",
       "background": "https://joaquinrodado.com/wp-content/uploads/Captura-de-pantalla-2023-08-30-a-las-17.37.36.png",
       "colSpan": "2"
     },
     {
-      "title": "Sears",
+      "title": "Sears",      
+      "tags": ["Diseño de sonido", "mezcla", "master"],
+      "video": "https://www.youtube.com/embed/-1Qz_V9cpDc?si=mNUE1-H4NAciibuj",
+      "description": "Anuncio de la Marca Sears. Director Albert Grabuleda.",
       "background": "https://joaquinrodado.com/wp-content/uploads/Captura-de-pantalla-2023-08-30-a-las-17.47.40.png",
       "colSpan": "2"
     },
     {
       "title": "Aula",
+      "tags": ["Diseño de sonido", "mezcla", "master"],
+      "video": "https://www.youtube.com/embed/zBJPiazmjEU?si=bNgCg_wLha7Ydv0o",
+      "description": "Spot televisivo del resort Al-Ula en Arabia Saudí, Productora: Prodigious Dubai.",
       "background": "https://joaquinrodado.com/wp-content/uploads/2022/06/ALULA-min.png",
       "colSpan": "1"
     },
     {
       "title": "3 Ositos",
+      "tags": ["Diseño de sonido", "mezcla", "master"],
+      "video":"https://www.youtube.com/embed/O5Fmhvety2k?si=YzaEBJuNoQqA6QU2",
+      "description": "Un hombre hace un trato con un misterioso sujeto donde le da a elegir uno de entre tres ositos de gominola los cuales otorgan cada uno un poder diferente: Cancelar todas su deudas, Seducir a la gente a voluntad o acabar con el hambre en el mundo. Director: Cayetano Casas",
       "background": "https://joaquinrodado.com/wp-content/uploads/2022/06/3-OSITOS-min.png",
       "colSpan": "2"
     },
     {
       "title": "Owners",
+      "tags": ["Diseño de sonido", "mezcla", "master"],
+      "video":"https://www.youtube.com/embed/5H0d5E2L2RA?si=h35BP5WYcUb7Ibd9",      
+      "description": "Cortometraje romantico que explica que la autoestima en una relación amorosa es lo mas. Importante. Director: Alex Maruny",
       "background": "https://joaquinrodado.com/wp-content/uploads/2022/06/OWNERS-min.png",
       "colSpan": "1"
     },
     {
       "title": "Europa Wins",
+      "tags": ["Efectos", "mezcla", "master"],
       "background": "https://joaquinrodado.com/wp-content/uploads/2022/06/EUROPA-WINS-min.png",
-      "colSpan": "2"
+      "video":"https://www.youtube.com/embed/GyT7PWIJ-6Q?si=JQeV8TVn_vyE5-f9",
+      "description":"Spot de televisión donde cantantes reconocidos el panorama musical actual promueven el consumo de frutas y verduras europeas. Director: Albert Grabuleda",
+      "colSpan": "2"      
     },
     {
       "title": "Afrodescendiente",
+      "tags": ["Efectos", "mezcla", "master"],
+      "video": "https://www.youtube.com/embed/yZkzGEgJx7A?si=jcs7n0j18ny1qbPN",
       "background": "https://joaquinrodado.com/wp-content/uploads/2022/06/AFRODESCENDIENTE-min.png",
+      "description": "Fashion film donde se nos muestran las raíces afroamericanas en una espléndida coreografía que nos muestra una gran conexión con la naturaleza y los sentimientos de liberación  a través del baile",
       "colSpan": "1"
     },
     {
       "title": "Love Lenguage",
-      "background": "https://joaquinrodado.com/wp-content/uploads/2022/06/LOVE-LANGUAGE-min.png"
-    },
-    {
+      "video": "https://www.youtube.com/embed/j0V9MlS5odE?si=IqrOItRMNzgw0iqG",
+      "tags": ["Creación de banda sonora"],
+      "background": "https://joaquinrodado.com/wp-content/uploads/2022/06/LOVE-LANGUAGE-min.png",
+      "description": "Dos jóvenes se encuentran a diario en un banco del parque y poco a poco fraguan una bonita relación y todo esto sin decir ni una sola palabra. Ejercicio de creación de banda sonora en el curso de sonido para Audiovisuales de 4o de UPF."
+  },
+  {
       "title": "The Wolf",
+      "tags": ["Banda Sonora","Diseño de sonido", "mezcla", "master"],
+      "video": "https://www.youtube.com/embed/3_t_rl3CtgY?si=AVU6GlW-J66rzaY0",
       "background": "https://joaquinrodado.com/wp-content/uploads/2022/06/THE-WOLF-min.png",
+      "description":"Trabajo de final de Master de la ESMUC de banda sonora para un cortometraje prestado",
       "colSpan": "2"
-    },
-    {
+  },
+  {
       "title": "Portal Foley",
+      "tags": ["Diseño de sonido", "mezcla", "master"],
+      "video": "https://www.youtube.com/embed/1NvjzCymetc?si=c9eNh7lSUIxsAC78",
       "background": "https://joaquinrodado.com/wp-content/uploads/2022/10/portal-foley.png",
+      "description":"Ejercicio de diseño de sonido y foley para un cortometraje prestado",
       "colSpan": "1"
-    },
-    {
+  },
+  {
       "title": "Sala de espera",
-      "background": "https://joaquinrodado.com/wp-content/uploads/2022/06/SALA-DE-ESPERA-min.png"
-    },
-    {
+      "tags": ["Banda Sonora"],
+      "video": "https://www.youtube.com/embed/Ugy8H__NNyo?si=AswDN8ln2t9BwnP7",
+      "description":"Cortometraje de misterio dónde se nos muestra un paciente desorientado dentro de unas peculiares instalaciones, de las cuales no puede escapar y por mucho que lo intenta siempre se encuentra impedimentos burocráticos. El protagonista que a demás sufre de amnesia deberá descubrir que fenómeno paranormal lo retiene en esa sala de espera.",
+      "background": "https://joaquinrodado.com/wp-content/uploads/2022/06/SALA-DE-ESPERA-min.png"      
+  },
+  {
       "title": "Señora X",
-      "background": "https://joaquinrodado.com/wp-content/uploads/2022/06/SEN%CC%83ORA-X-min.png"            
-    },
-    {
+      "tags": ["Diseño de sonido","musica", "mezcla", "master"],
+      "video":"https://www.youtube.com/embed/HLk1DI_RHGs?si=knI1o3gLcokpdtzP",
+      "description": "Animación del logo de Señora X, la productora audiovisual de la escuela FX Animation de Barcelona",
+      "background": "https://joaquinrodado.com/wp-content/uploads/2022/06/SEN%CC%83ORA-X-min.png"      
+  },
+  {
       "title": "Ministry of tourism",
+      "tags": ["Efectos", "mezcla", "master"],
+      "video": "https://www.youtube.com/embed/3_t_rl3CtgY?si=AVU6GlW-J66rzaY0",
+      "description": "Campaña publicitaria del ministerio de turismo de Arabia Saudí de la productora Purple Brain. Director: Pablo Olivero",
       "background": "https://joaquinrodado.com/wp-content/uploads/2022/10/ministry-of-tourism.png"
-    },
-    {
+  },
+  {
       "title": "Club Miles",
+      "tags": ["Diseño de sonido", "mezcla", "master"],
+      "description": "Spot Dirigido por Albert Grabuleda",
+      "video": "https://www.youtube.com/embed/ntzJKAYbTFc?si=LFEa9Xcxb1InNsfQ",
       "background": "https://joaquinrodado.com/wp-content/uploads/2022/09/clubmiles1-scaled.jpg"
-    },
-    {
+  },
+  {
       "title": "Tarso",
-      "background": "https://joaquinrodado.com/wp-content/uploads/2022/06/TARSO-min.png"
-    },
-    {
+      "video": "https://www.youtube.com/embed/aK0M3ETw98A?si=6EXgxOBdO3x6Zohf",
+      "background": "https://joaquinrodado.com/wp-content/uploads/2022/06/TARSO-min.png",
+      "description": "Thriller postapocaliptico donde nuestro protagonista , Tarso vaga sin descanso por una tierra baldía y desolada, donde solo encuentra muerte y desesperación a su paso. Su parada en una iglesia cercana decidirá su destino. Director: Imanol G. Gurrutxaga.",
+      "tags": ["Banda Sonora"]
+  },
+  {
       "title": "Un Rayo Verde",
+      "video": "https://www.youtube.com/embed/JJx_t6WyL8U?si=vmstxMRnXj4uchX5",
       "background": "https://joaquinrodado.com/wp-content/uploads/2022/06/UN-RAYO-VERDE-min.png",
-      "colSpan": "2"
-    },
+      "description": "Una ciudad con personalidad propia (Barcelona con la voz de Jöel Mulach) luchará para juntar a dos jovenes los cuales al Destino, distraído, se ha olvidado de hacer que se enamoren perdidamente. Dirección: Paula Viso",
+      "colSpan": "2",
+      "tags": ["Diseño de sonoro", "mezcla", "master"]
+  },
     {
       "title": "Lost In time",
+      "tags": ["Diseño de sonoro", "mezcla", "master"],
+      "video":"https://www.youtube.com/embed/qbv-5HbXdO0?si=NhqlyO4YTDxsVpOi",
       "background": "https://joaquinrodado.com/wp-content/uploads/Captura-de-pantalla-2023-08-30-a-las-18.01.46.png",
+      "description": "Diseño sonoro para el Berlin International Sound Design Festival de 2022.",
       "colSpan": "2"
     }
   ]
