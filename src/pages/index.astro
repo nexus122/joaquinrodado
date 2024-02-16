@@ -9,7 +9,7 @@ import json from '../../public/portfolio.json';
     <div class="flex justify-center p-40">
         <h1 class="text-[6rem]">Portfolio</h1>
     </div>
-	<div class="cards grid grid-cols-4">
+	<div class="cards grid lg:grid-cols-4 md:grid-cols-2">
         {json.map((project) => (
             <Card              
               title={project.title}
