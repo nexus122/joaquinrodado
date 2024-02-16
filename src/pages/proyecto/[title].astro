@@ -19,69 +19,73 @@ export async function getPaths() {
 ---
 
 <Layout title={Astro.params.title ?? ""} />
-<div>
-    {
-        json.map((project) => {
-            if (project.title === Astro.params.title) {
-                return (
-                    <div class="general">
-                        <div
-                            class="header parallax flex flex-col"
-                            style={`background-image: url(${project.background})`}                            
-                        >
-                            <h1>
-                                <a href="/" class="arrow">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 448 512"
-                                    >
-                                        <path
-                                            fill="#ffffff"
-                                            d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
-                                        />
-                                    </svg>
-                                </a>
-                                {project.title}
-                            </h1>
-                        </div>
-                        <div class="content">
-                            <div class="flex lg:flex-row flex-col justify-center gap-5">
-                                <iframe
-                                    src={`${project.video}`}
-                                    allowfullscreen
-                                />
-                                <span class="flex flex-col gap-4">
-                                    <h2 class="text-5xl">{project.title}</h2>
-                                    <span>
-                                        {project.tags.map((tag) => {
-                                            if (tag) {
-                                                return (
-                                                    <span class="bg-gray-200 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2">
-                                                        {tag}
-                                                    </span>
-                                                );
-                                            } else {
-                                                return null;
-                                            }
-                                        })}
-                                    </span>
-                                    <p>{project.description}</p>
+<a class="float lg:hidden" href="/" class="arrow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path
+            fill="#ffffff"
+            d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+        ></path>
+    </svg>
+</a>
+
+{
+    json.map((project) => {
+        if (project.title === Astro.params.title) {
+            return (
+                <div class="general">
+                    <div
+                        class="header parallax flex flex-col"
+                        style={`background-image: url(${project.background})`}
+                    >
+                        <h1>
+                            <a href="/" class="arrow">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512"
+                                >
+                                    <path
+                                        fill="#ffffff"
+                                        d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+                                    />
+                                </svg>
+                            </a>
+                            {project.title}
+                        </h1>
+                    </div>
+                    <div class="content">
+                        <div class="flex lg:flex-row flex-col justify-center gap-5">
+                            <iframe src={`${project.video}`} allowfullscreen />
+                            <span class="flex flex-col gap-4">
+                                <h2 class="text-5xl">{project.title}</h2>
+                                <span>
+                                    {project.tags.map((tag) => {
+                                        if (tag) {
+                                            return (
+                                                <span class="bg-gray-200 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2">
+                                                    {tag}
+                                                </span>
+                                            );
+                                        } else {
+                                            return null;
+                                        }
+                                    })}
                                 </span>
-                            </div>
+                                <p>{project.description}</p>
+                            </span>
                         </div>
                     </div>
-                );
-            }
-        })
-    }
-</div>
+                </div>
+            );
+        }
+    })
+}
 
 <script>
     setTimeout(() => {
         const iframe = document.querySelector("iframe");
         if (iframe) {
             const iframeTop =
-                iframe.getBoundingClientRect().top + window.pageYOffset;
+                iframe.getBoundingClientRect().top + window.pageYOffset -101;
             window.scrollTo({
                 top: iframeTop,
                 behavior: "smooth",
@@ -144,5 +148,17 @@ export async function getPaths() {
         width: 1em;
         display: inline-block;
         vertical-align: middle;
+    }
+
+    .float {
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.7);
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        bottom: 1em;
+        right: 1em;
+        box-sizing: border-box;
+        padding: 1em;
     }
 </style>
