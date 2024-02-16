@@ -5,13 +5,13 @@ import json from '../../public/portfolio.json';
 ---
 
 <Layout title="Welcome to Astro.">
-    <!-- quiero que me centre el titulo en el centro -->
+    <!-- quiero que me centre el titulo en el centro -->    
     <div class="flex justify-center p-40">
-        <h1 class="text-[6rem]">Portfolio</h1>
+        <h1 class="text-[6rem]" >Portfolio</h1>
     </div>
 	<div class="cards grid lg:grid-cols-4 md:grid-cols-2">
         {json.map((project) => (
-            <Card              
+            <Card
               title={project.title}
               background={project.background}
               colSpan={project.colSpan || "1"}

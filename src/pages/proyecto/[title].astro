@@ -27,7 +27,7 @@ export async function getPaths() {
                     <div class="general">
                         <div
                             class="header parallax flex flex-col"
-                            style={`background-image: url(${project.background})`}
+                            style={`background-image: url(${project.background})`}                            
                         >
                             <h1>
                                 <a href="/" class="arrow">
@@ -99,7 +99,7 @@ export async function getPaths() {
         background-size: cover;
         background-position: center;
         height: 100vh;
-        width: 100vw;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -120,7 +120,7 @@ export async function getPaths() {
         text-shadow: 1px 1px 2px black;
     }
     svg {
-        filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.8));
+        filter: drop-shadow(1px 2px 1px rgb(0 0 0 / 0.8));
     }
     p {
         color: white;
