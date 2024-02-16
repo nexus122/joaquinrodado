@@ -17,16 +17,10 @@
       "colSpan": "2"
     },
     {
-      "title": "Wilson",
-      "tags": ["Diseño de sonido", "mezcla", "master"],
-      "description": "Spot dirigido por Albert Grabuleda",
-      "background": "https://joaquinrodado.com/wp-content/uploads/2022/09/wilson1-scaled.jpg",
-      "colSpan": "2"
-    },
-    {
       "title": "Agua",
       "tags": ["Diseño de sonido", "mezcla", "master"],
       "video": "https://www.youtube.com/embed/Db4yzLHA1W4?si=FK1hfcJ0br0_lUR4",
+      "description": "Una colaboración con Guadalkayak para atraer nuevos turistas a la zona del Parque Natural de las Sierras de Cazorla, Segura y Las Villas donde fue rodado. Este cortometraje nos evoca a una fuga de la rutina en busca de valores y pensamiento positivo. Una vuelta a lo básico y una vida más fácil, un reencuentro con la naturaleza pero con muchas emociones fuertes Director: Juan Carlos Ordoñez.",
       "background": "https://joaquinrodado.com/wp-content/uploads/2022/06/AGUA-min.png",
       "colSpan": "2"
     },
@@ -60,7 +54,7 @@
       "video": "https://www.youtube.com/embed/zBJPiazmjEU?si=bNgCg_wLha7Ydv0o",
       "description": "Spot televisivo del resort Al-Ula en Arabia Saudí, Productora: Prodigious Dubai.",
       "background": "https://joaquinrodado.com/wp-content/uploads/2022/06/ALULA-min.png",
-      "colSpan": "1"
+      "colSpan": "2"
     },
     {
       "title": "3 Ositos",
@@ -76,7 +70,7 @@
       "video":"https://www.youtube.com/embed/5H0d5E2L2RA?si=h35BP5WYcUb7Ibd9",      
       "description": "Cortometraje romantico que explica que la autoestima en una relación amorosa es lo mas. Importante. Director: Alex Maruny",
       "background": "https://joaquinrodado.com/wp-content/uploads/2022/06/OWNERS-min.png",
-      "colSpan": "1"
+      "colSpan": "2"
     },
     {
       "title": "Europa Wins",
