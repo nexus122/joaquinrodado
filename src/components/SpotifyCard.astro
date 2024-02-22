@@ -1,0 +1,18 @@
+---
+const { song } = Astro.props;
+---
+
+<iframe 
+    style="border-radius:12px" 
+    src=`https://open.spotify.com/embed/${song}?utm_source=generator&theme=0`
+    width="100%" 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy"
+>
+</iframe>
+
+<style>
+    iframe {
+        z-index: 0;
+    }
+</style>

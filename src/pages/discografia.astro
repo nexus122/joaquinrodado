@@ -1,9 +1,54 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import Disco from "../components/Disco.astro";
+import Title from "../components/Title.astro";
+
+import json from "../../public/discografia.json";
 ---
 
 <Layout title="Discografia">
-    <div class="flex justify-center p-40">
-        <h1 class="text-[6rem]">Discografía</h1>
+    <Title title="Discografía" />
+    <div class="cards grid lg:grid-cols-4 md:grid-cols-2 gap-12">
+        {
+            json
+                .filter((project) => project.song)
+                .map((project) => (
+                    <Disco
+                        title={project.title}
+                        background={project.caratula}
+                        song={project.song}
+                    />
+                ))
+        }
     </div>
 </Layout>
+
+<style>
+    .cards {
+        padding: 1em;
+        margin: 0 auto;
+    }
+</style>
+
+<script>
+    const iframeElements = document.querySelectorAll("iframe");
+
+    iframeElements.forEach((iframe) => {
+        const spotifyEmbedWindow = iframe.contentWindow;
+        spotifyEmbedWindow.postMessage({ command: "pause" }, "*");
+    });
+
+    let cards = document.querySelectorAll(".card");
+    cards.forEach((element, index) => {
+        element.addEventListener("click", () => {
+            console.log(index);
+            iframeElements.forEach((iframe, index2) => {
+                if(index == index2) return;
+                const spotifyEmbedWindow = iframe.contentWindow;
+                spotifyEmbedWindow.postMessage({ command: "pause" }, "*");
+            });
+        });
+    });
+
+    console.log(cards);
+</script>

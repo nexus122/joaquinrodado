@@ -1,14 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Title from '../components/Title.astro';
 import json from '../../public/portfolio.json';
 ---
 
 <Layout title="Welcome to Astro.">
     <!-- quiero que me centre el titulo en el centro -->    
-    <div class="flex justify-center p-40">
-        <h1 class="text-[6rem]" >Portfolio</h1>
-    </div>
+    <Title title="Portfolio"></Title>
 	<div class="cards grid lg:grid-cols-4 md:grid-cols-2">
         {json.map((project) => (
             <Card

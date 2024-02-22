@@ -1,0 +1,70 @@
+---
+interface Props {
+	title: string;
+	description?: string;
+	background: string;
+	song?: string;
+}
+import SpotifyCard from "./SpotifyCard.astro";
+const { title, background, song } = Astro.props;
+---
+
+<div data-aos="fade-up" class:list={["card"]}>
+	<img class="img" src={background} alt="" />
+	<div class="overlay">
+		<h1>{title}</h1>
+	</div>
+	<span class="w-full">
+		<SpotifyCard song={song} />
+	</span>
+</div>
+<style>
+	.card {
+		min-width: 50%;
+		min-height: 200px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: end;
+		color: white;
+		text-shadow: 0 0 10px black;
+		overflow: hidden;
+		transition: all 0.3s;
+		z-index: 99;
+	}
+
+	.card .overlay {
+		width: 100%;
+		text-align: center;
+	}
+
+	.card .overlay h1 {
+		font-size: 3rem;
+		margin: 0;
+	}
+
+	.img {
+		width: 100%;
+		height: 100%;
+		/*object-fit: cover;*/
+		position: relative;
+		transition: all 0.3s;
+	}
+
+	.hidde {
+		position: absolute;
+		top: 40%;
+		display: block;
+		width: 100%;
+		visibility: hidden;
+		opacity: 0;
+		transition:
+			visibility 0.3s linear,
+			opacity 0.3s linear;
+		transition: all 0.3s;
+	}
+	.card:hover .hidde {
+		visibility: visible;
+		opacity: 1;
+	}
+</style>
