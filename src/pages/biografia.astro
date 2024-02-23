@@ -6,4 +6,41 @@ import Layout from '../layouts/Layout.astro';
     <div class="flex justify-center p-40">
         <h1 class="text-[6rem]">Biografía</h1>
     </div>
+    <div class="general">
+        <article>
+            <h2 class="text-[4rem]">Diseño Sonoro</h1>
+            <p>Inició sus estudios de Sonido para Audiovisuales y Espectáculos en el Centro Politécnico Villar de Barcelona en 2012, y tras acabarlo en 2014 decidió cursar el grado universitario de Medios Audiovisuales de la UPF finalizado en 2019.</p>
+            <p>Durante todo ese tiempo en la universidad cultivó técnicas de mezcla y métodos de creación de efectos de sonido mediante sintetizadores y grabación de audio, más conocido como “Foley”.</p>
+            <p>Hasta la fecha, tras varios trabajos audiovisuales a sus espaldas, ha ido puliendo y perfeccionando sus métodos de diseño de sonido.</p>
+        </article>
+        <article>
+            <h2 class="text-[4rem]">Creación Musical</h1>
+            <p>Sus estudios de música datan del 2004 en adelante, Fue adquiriendo conocimiento y manejo de varios instrumentos musicales, así como gusto por un amplio abanico de géneros musicales.</p>
+            <p>En 2019, recién graduado de la universidad, se aventuró a cursar el Máster de Composición de Bandas Sonoras en la ESMUC.</p>
+            <p>En esa época pudo conocer a grandes figuras del mundo de la composición musical en España como: Angel Valverde, Arnau Bataller, Josep Sanou y Dani Trujillo, con las cuales actualmente mantiene el contacto y sigue colaborando en sus proyectos.</p>
+            <p>Como demuestra en su DISCOGRAFÍA, Joaquin Rodado se muestra muy versátil a la hora de componer música para proyectos audiovisuales. Puede crear tanto ambientes etéreos como ambientes de tensión, pasando por música folk o indie-rock, no sin mencionar también la electrónica, el Hip-Hop y el Trap.</p>
+        </article>
+    </div>
 </Layout>
+
+<style scoped>
+    .general {
+     display: flex;
+     gap: 1em;
+     padding: 1em;
+     padding-top: 0em;
+     justify-content: center;     
+    }
+    article {
+        margin: 2rem 0;
+        background-color: #202020;
+        padding: 1em;        
+        border-radius: 25px;
+        font-size: 1.2rem;
+        width: 40%;        
+    }
+    article p{
+        margin: 1rem 0;
+        display: block;
+    }
+</style>
