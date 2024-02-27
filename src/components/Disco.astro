@@ -9,7 +9,7 @@ import SpotifyCard from "./SpotifyCard.astro";
 const { title, background, song } = Astro.props;
 ---
 
-<div data-aos="fade-up" class:list={["card"]}>
+<div class:list={["card"]}>
 	<img class="img" src={background} alt="" />
 	<div class="overlay">
 		<h1>{title}</h1>
