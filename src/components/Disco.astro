@@ -10,7 +10,7 @@ const { title, background, song } = Astro.props;
 
 <div class:list={["card"]}>
 	<input type="hidden" value={song} />
-	<img class="img" src={background} alt="" />
+	<img class="img" loading="lazy" src={background} alt="" />
 	<div class="overlay">
 		<h1>{title}</h1>
 	</div>
