@@ -1,24 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Title from '../components/Title.astro';
 ---
 
 <Layout title="biografia">
-    <div class="flex justify-center p-40">
-        <h1 class="text-[6rem]">Biografía</h1>
-    </div>
+    <Title title="Biografía" />
     <div class="general">
         <article>
-            <h2 class="text-[4rem]">Diseño Sonoro</h1>
-            <p>Inició sus estudios de Sonido para Audiovisuales y Espectáculos en el Centro Politécnico Villar de Barcelona en 2012, y tras acabarlo en 2014 decidió cursar el grado universitario de Medios Audiovisuales de la UPF finalizado en 2019.</p>
-            <p>Durante todo ese tiempo en la universidad cultivó técnicas de mezcla y métodos de creación de efectos de sonido mediante sintetizadores y grabación de audio, más conocido como “Foley”.</p>
-            <p>Hasta la fecha, tras varios trabajos audiovisuales a sus espaldas, ha ido puliendo y perfeccionando sus métodos de diseño de sonido.</p>
+            <h2 class="text-[4rem]">Diseño Sonoro</h2>
+            <p>Comencé mis estudios de Sonido para Audiovisuales y Espectáculos en el Centro Politécnico Villar de Barcelona en 2012. Después de completarlos en 2014, decidí continuar con el grado universitario de Medios Audiovisuales en la UPF, el cual finalicé en 2019.</p>
+            <p>A lo largo de mi tiempo en la universidad, me dediqué a cultivar técnicas de mezcla y métodos de creación de efectos de sonido mediante sintetizadores y grabación de audio, también conocido como "Foley".</p>
+            <p>Hasta la fecha, después de haber trabajado en varios proyectos audiovisuales, he estado perfeccionando y puliendo mis métodos de diseño de sonido.</p>
         </article>
         <article>
-            <h2 class="text-[4rem]">Creación Musical</h1>
-            <p>Sus estudios de música datan del 2004 en adelante, Fue adquiriendo conocimiento y manejo de varios instrumentos musicales, así como gusto por un amplio abanico de géneros musicales.</p>
-            <p>En 2019, recién graduado de la universidad, se aventuró a cursar el Máster de Composición de Bandas Sonoras en la ESMUC.</p>
-            <p>En esa época pudo conocer a grandes figuras del mundo de la composición musical en España como: Angel Valverde, Arnau Bataller, Josep Sanou y Dani Trujillo, con las cuales actualmente mantiene el contacto y sigue colaborando en sus proyectos.</p>
-            <p>Como demuestra en su DISCOGRAFÍA, Joaquin Rodado se muestra muy versátil a la hora de componer música para proyectos audiovisuales. Puede crear tanto ambientes etéreos como ambientes de tensión, pasando por música folk o indie-rock, no sin mencionar también la electrónica, el Hip-Hop y el Trap.</p>
+            <h2 class="text-[4rem]">Creación Musical</h2>
+            <p>Mis estudios de música comenzaron en 2004 y continuaron en adelante. A lo largo de este tiempo, adquirí conocimientos y habilidades en varios instrumentos musicales, así como un gusto por una amplia variedad de géneros musicales.</p>
+            <p>En 2019, recién graduado de la universidad, decidí aventurarme y cursar el Máster de Composición de Bandas Sonoras en la ESMUC.</p>
+            <p>Durante ese periodo, tuve la oportunidad de conocer a destacadas figuras del mundo de la composición musical en España, como Ángel Valverde, Arnau Bataller, Josep Sanou y Dani Trujillo. Actualmente, mantengo contacto con ellos y colaboro en sus proyectos.</p>
+            <p>Como se evidencia en mi DISCOGRAFÍA, me muestro muy versátil a la hora de componer música para proyectos audiovisuales. Puedo crear desde ambientes etéreos hasta tensionantes, explorando géneros como la música folk, indie-rock, electrónica, Hip-Hop y Trap.</p>
         </article>
     </div>
 </Layout>
@@ -42,5 +41,15 @@ import Layout from '../layouts/Layout.astro';
     article p{
         margin: 1rem 0;
         display: block;
+    }
+
+    @media (max-width: 600px) {
+        .general {
+            flex-direction: column;
+            align-items: center;
+        }
+        article {
+            width: 100%;
+        }
     }
 </style>
