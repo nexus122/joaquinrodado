@@ -5,19 +5,42 @@ interface Props {
 	background: string;
 	song?: string;
 }
-import SpotifyCard from "./SpotifyCard.astro";
 const { title, background, song } = Astro.props;
 ---
 
 <div class:list={["card"]}>
+	<input type="hidden" value={song} />
 	<img class="img" src={background} alt="" />
 	<div class="overlay">
 		<h1>{title}</h1>
 	</div>
-	<span class="w-full">
-		<SpotifyCard song={song} />
-	</span>
+	<span class="w-full" id="modal"></span>
 </div>
+<script>
+	function clearIframes() {
+		document.querySelectorAll("iframe").forEach((iframe) => {
+			iframe.remove();
+		});
+	}
+	document.querySelectorAll(".card").forEach((card) => {
+		card.addEventListener("click", () => {
+			clearIframes();
+			const song = card.querySelector("input").value;
+			const modal = card.querySelector("#modal");
+			console.log(song);
+			console.log(modal);
+			modal.innerHTML = `
+			<iframe 
+				style="border-radius:12px;" 
+				class="iframe"
+				src='https://open.spotify.com/embed/${song}?utm_source=generator&theme=0'				
+				allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"				
+				loading="lazy"
+			>
+			</iframe>`;
+		});
+	});
+</script>
 <style>
 	.card {
 		min-width: 50%;
@@ -31,6 +54,8 @@ const { title, background, song } = Astro.props;
 		overflow: hidden;
 		transition: all 0.3s;
 		z-index: 99;
+		cursor: pointer;
+		position: relative;
 	}
 
 	.card .overlay {
@@ -51,20 +76,33 @@ const { title, background, song } = Astro.props;
 		transition: all 0.3s;
 	}
 
-	.hidde {
+	#modal {
 		position: absolute;
-		top: 40%;
-		display: block;
+		top: 0;
+		left: 0;
 		width: 100%;
-		visibility: hidden;
-		opacity: 0;
-		transition:
-			visibility 0.3s linear,
-			opacity 0.3s linear;
-		transition: all 0.3s;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
-	.card:hover .hidde {
-		visibility: visible;
-		opacity: 1;
+
+	.loader {
+		border: 16px solid #f3f3f3;
+		border-radius: 50%;
+		border-top: 16px solid #3498db;
+		width: 120px;
+		height: 120px;
+		-webkit-animation: spin 2s linear infinite; /* Safari */
+		animation: spin 2s linear infinite;
+	}
+
+	@keyframes spin {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(360deg);
+		}
 	}
 </style>
