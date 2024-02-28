@@ -11,18 +11,14 @@ const { title, background, colSpan, rowSpan, description } = Astro.props;
 
 <a
 	href={`/proyecto/${title}`}
-	class:list={[
-		"card"
-	]}
-	style={{ "grid-row": `span ${rowSpan}`, "grid-column": `span ${colSpan}`}}
+	class:list={["card"]}
+	style={{ "grid-row": `span ${rowSpan}`, "grid-column": `span ${colSpan}` }}
 >
-
-		<div class="overlay">
-			<h1>{title}</h1>
-			<p>{description}</p>
-		</div>
-		<img class="img" src={background} alt="" />
-
+	<div class="overlay">
+		<h1>{title}</h1>
+		<p>{description}</p>
+	</div>
+	<img class="img" src={background} alt="" />
 </a>
 <style>
 	.card {
@@ -74,5 +70,11 @@ const { title, background, colSpan, rowSpan, description } = Astro.props;
 	.card:hover .img {
 		transform: scale(1.1);
 		transition: all 0.3s;
+	}
+
+	@media (max-width: 600px) {
+		.card .overlay {
+			opacity: 1 !important;
+		}
 	}
 </style>
